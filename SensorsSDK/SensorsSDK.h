@@ -15,4 +15,4 @@ FOUNDATION_EXPORT const unsigned char SensorsSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SensorsSDK/PublicHeader.h>
 
-
+#import <SensorsSDK/SensorsAnalyticsSDK.h>

@@ -10,6 +10,8 @@
 		1C96415225768D4A00C9A35D /* SensorsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C96414825768D4900C9A35D /* SensorsSDK.framework */; };
 		1C96415725768D4A00C9A35D /* SensorsSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C96415625768D4A00C9A35D /* SensorsSDKTests.m */; };
 		1C96415925768D4A00C9A35D /* SensorsSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C96414B25768D4900C9A35D /* SensorsSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C9641AC25768DE300C9A35D /* SensorsAnalyticsSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9641AA25768DE300C9A35D /* SensorsAnalyticsSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C9641AD25768DE300C9A35D /* SensorsAnalyticsSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9641AB25768DE300C9A35D /* SensorsAnalyticsSDK.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		1C96415125768D4A00C9A35D /* SensorsSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SensorsSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C96415625768D4A00C9A35D /* SensorsSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SensorsSDKTests.m; sourceTree = "<group>"; };
 		1C96415825768D4A00C9A35D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C9641AA25768DE300C9A35D /* SensorsAnalyticsSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensorsAnalyticsSDK.h; sourceTree = "<group>"; };
+		1C9641AB25768DE300C9A35D /* SensorsAnalyticsSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SensorsAnalyticsSDK.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				1C96414B25768D4900C9A35D /* SensorsSDK.h */,
+				1C9641AA25768DE300C9A35D /* SensorsAnalyticsSDK.h */,
+				1C9641AB25768DE300C9A35D /* SensorsAnalyticsSDK.m */,
 				1C96414C25768D4A00C9A35D /* Info.plist */,
 			);
 			path = SensorsSDK;
@@ -93,6 +99,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C9641AC25768DE300C9A35D /* SensorsAnalyticsSDK.h in Headers */,
 				1C96415925768D4A00C9A35D /* SensorsSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C9641AD25768DE300C9A35D /* SensorsAnalyticsSDK.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
