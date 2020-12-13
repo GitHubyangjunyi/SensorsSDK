@@ -20,7 +20,7 @@
     //初始化埋点SDK
     [SensorsAnalyticsSDK sharedInstance];
     //触发事件
-    [[SensorsAnalyticsSDK sharedInstance] track:@"MyFirstEvent" properties:@{@"testKey" : @"testValue"}];
+    [[SensorsAnalyticsSDK sharedInstance] track:@"我的第一个事件" properties:@{@"测试Key" : @"测试Value"}];
     return YES;
 }
 
