@@ -14,7 +14,7 @@ static NSString *const SensorsAnalyticsVersion = @"1.0.0";
 
 //由SDK默认采集的预置属性
 @property (nonatomic, strong) NSDictionary<NSString *, id> *automaticProperties;
-//是否已经收到过UIApplicationWillResignActiveNotification
+//是否已经收到过UIApplicationWillResignActiveNotification通知
 @property (nonatomic) BOOL applicationWillResignActive;
 //是否被动启动
 @property (nonatomic, getter=isLaunchedPassively) BOOL launchedPassively;
@@ -28,7 +28,7 @@ static NSString *const SensorsAnalyticsVersion = @"1.0.0";
     static dispatch_once_t onceToken;
     static SensorsAnalyticsSDK *sdk = nil;
     dispatch_once(&onceToken, ^{
-        sdk = [[SensorsAnalyticsSDK alloc] init];
+        sdk = [[SensorsAnalyticsSDK alloc] init];//能否改为sdk = [[[self class] alloc] init];
     });
     return sdk;
 }
@@ -40,6 +40,7 @@ static NSString *const SensorsAnalyticsVersion = @"1.0.0";
         //采集预置属性
         _automaticProperties = [self collectAutomaticProperties];
         //设置是否被动启动标志位
+        //如果剩余运行时间不等于UIApplicationBackgroundFetchIntervalNever就是被动启动的
         _launchedPassively = UIApplication.sharedApplication.backgroundTimeRemaining != UIApplicationBackgroundFetchIntervalNever;
         //注册通知中心监听
         [self setupListeners];
@@ -47,7 +48,7 @@ static NSString *const SensorsAnalyticsVersion = @"1.0.0";
     return self;
 }
 
-
+//采集预置属性
 - (NSDictionary<NSString *, id> *)collectAutomaticProperties
 {
     NSMutableDictionary *properties = [[NSMutableDictionary alloc] init];
@@ -90,7 +91,7 @@ static NSString *const SensorsAnalyticsVersion = @"1.0.0";
 
 -(void)applicationDidFinishLaunching:(NSNotification *)notification {
     NSLog(@"应用程序已经启动");
-    //如果应用程序在后台运行时触发被动启动事件
+    //如果应用程序是被动启动的才采集被动启动事件
     if (self.isLaunchedPassively) {
         [self track:@"$AppStartPassively" properties:nil];
     }

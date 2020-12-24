@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
  @abstract
  调用Track接口触发事件
  @discussion
- properties是一个字典，其中key是NSString类型的属性名称，value是属性内容
+ properties是一个字典其中key是NSString类型的属性名称value是属性内容
  @param eventName 事件名称
  @param properties 事件属性
  */
