@@ -15,8 +15,62 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXg-1l-w4b">
+                                <rect key="frame" x="184" y="433" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="trackTargetAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OLB-zN-Df7"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hUi-3O-WGN">
+                                <rect key="frame" x="332" y="432" width="51" height="31"/>
+                                <connections>
+                                    <action selector="trackTargetActionUISwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="kPZ-Gj-8k0"/>
+                                </connections>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kR5-sU-Jy9">
+                                <rect key="frame" x="148" y="238" width="118" height="31"/>
+                                <connections>
+                                    <action selector="trackTargetActionUISlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="i8S-OP-jvo"/>
+                                </connections>
+                            </slider>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="z1c-ee-dMt">
+                                <rect key="frame" x="142" y="286" width="130" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SzG-Ea-V4b"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="trackTargetActionUISegmentControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="yhf-gM-huP"/>
+                                </connections>
+                            </segmentedControl>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="BSn-Xh-B2i">
+                                <rect key="frame" x="160" y="530" width="94" height="32"/>
+                                <connections>
+                                    <action selector="trackTargetActionUIStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="lMM-yX-zid"/>
+                                </connections>
+                            </stepper>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="z1c-ee-dMt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="7PH-n6-aSu"/>
+                            <constraint firstItem="SXg-1l-w4b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="86n-ZK-gPW"/>
+                            <constraint firstItem="kR5-sU-Jy9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="8EI-KZ-23T"/>
+                            <constraint firstItem="kR5-sU-Jy9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="9Jc-mR-VC0"/>
+                            <constraint firstItem="hUi-3O-WGN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="344" id="BOi-GA-hLg"/>
+                            <constraint firstItem="BSn-Xh-B2i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="160" id="CC6-j8-ZmX"/>
+                            <constraint firstItem="hUi-3O-WGN" firstAttribute="leading" secondItem="SXg-1l-w4b" secondAttribute="trailing" constant="102" id="G19-oe-EM4"/>
+                            <constraint firstItem="SXg-1l-w4b" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GuA-aj-Bbs"/>
+                            <constraint firstItem="BSn-Xh-B2i" firstAttribute="top" secondItem="SXg-1l-w4b" secondAttribute="bottom" constant="67" id="Ni9-ih-ZkZ"/>
+                            <constraint firstItem="z1c-ee-dMt" firstAttribute="centerX" secondItem="kR5-sU-Jy9" secondAttribute="centerX" id="WjC-Fa-slN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kR5-sU-Jy9" secondAttribute="trailing" constant="150" id="dz3-Hs-knM"/>
+                            <constraint firstItem="z1c-ee-dMt" firstAttribute="top" secondItem="kR5-sU-Jy9" secondAttribute="bottom" constant="18" id="eNB-HQ-c8U"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Cx5-4e-vxL"/>
                 </viewController>

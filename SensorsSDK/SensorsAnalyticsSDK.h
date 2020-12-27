@@ -35,6 +35,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 -(void)track:(NSString *)eventName properties:(nullable NSDictionary<NSString *, id> *)properties;
 
+/**
+ 触发$AppClick事件
+ @param view触发事件的控件
+ @param properties自定义事件属性
+ */
+-(void)trackAppClickWithView:(UIView *)view properties:(nullable NSDictionary<NSString *, id> *)properties;
+
 @end
 
 NS_ASSUME_NONNULL_END

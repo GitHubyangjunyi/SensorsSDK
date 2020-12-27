@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C40D2E52596125400B3A3C7 /* UIApplication+SensorsData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C40D2E32596125400B3A3C7 /* UIApplication+SensorsData.h */; };
+		1C40D2E62596125400B3A3C7 /* UIApplication+SensorsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C40D2E42596125400B3A3C7 /* UIApplication+SensorsData.m */; };
+		1C40D2EB2596212700B3A3C7 /* UIView+SensorsData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C40D2E92596212700B3A3C7 /* UIView+SensorsData.h */; };
+		1C40D2EC2596212700B3A3C7 /* UIView+SensorsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C40D2EA2596212700B3A3C7 /* UIView+SensorsData.m */; };
 		1C96415225768D4A00C9A35D /* SensorsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C96414825768D4900C9A35D /* SensorsSDK.framework */; };
 		1C96415725768D4A00C9A35D /* SensorsSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C96415625768D4A00C9A35D /* SensorsSDKTests.m */; };
 		1C96415925768D4A00C9A35D /* SensorsSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C96414B25768D4900C9A35D /* SensorsSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -17,6 +21,8 @@
 		9D241719258F11130064A9E2 /* UIViewController+SensorsData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D241717258F11130064A9E2 /* UIViewController+SensorsData.h */; };
 		9D24171A258F11130064A9E2 /* UIViewController+SensorsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D241718258F11130064A9E2 /* UIViewController+SensorsData.m */; };
 		9D241722258F21FB0064A9E2 /* sensorsdata_black_list.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D241721258F21FB0064A9E2 /* sensorsdata_black_list.plist */; };
+		9DEEE2C925987778001A8C20 /* UIControl+SensorsData.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DEEE2C725987778001A8C20 /* UIControl+SensorsData.h */; };
+		9DEEE2CA25987778001A8C20 /* UIControl+SensorsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DEEE2C825987778001A8C20 /* UIControl+SensorsData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C40D2E32596125400B3A3C7 /* UIApplication+SensorsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+SensorsData.h"; sourceTree = "<group>"; };
+		1C40D2E42596125400B3A3C7 /* UIApplication+SensorsData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+SensorsData.m"; sourceTree = "<group>"; };
+		1C40D2E92596212700B3A3C7 /* UIView+SensorsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+SensorsData.h"; sourceTree = "<group>"; };
+		1C40D2EA2596212700B3A3C7 /* UIView+SensorsData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+SensorsData.m"; sourceTree = "<group>"; };
 		1C96414825768D4900C9A35D /* SensorsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SensorsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C96414B25768D4900C9A35D /* SensorsSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensorsSDK.h; sourceTree = "<group>"; };
 		1C96414C25768D4A00C9A35D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +53,8 @@
 		9D241717258F11130064A9E2 /* UIViewController+SensorsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SensorsData.h"; sourceTree = "<group>"; };
 		9D241718258F11130064A9E2 /* UIViewController+SensorsData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SensorsData.m"; sourceTree = "<group>"; };
 		9D241721258F21FB0064A9E2 /* sensorsdata_black_list.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = sensorsdata_black_list.plist; sourceTree = "<group>"; };
+		9DEEE2C725987778001A8C20 /* UIControl+SensorsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+SensorsData.h"; sourceTree = "<group>"; };
+		9DEEE2C825987778001A8C20 /* UIControl+SensorsData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+SensorsData.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,13 +98,19 @@
 			isa = PBXGroup;
 			children = (
 				1C96414B25768D4900C9A35D /* SensorsSDK.h */,
-				1C9641AA25768DE300C9A35D /* SensorsAnalyticsSDK.h */,
-				1C9641AB25768DE300C9A35D /* SensorsAnalyticsSDK.m */,
-				1C96414C25768D4A00C9A35D /* Info.plist */,
 				9D24170F258F0E330064A9E2 /* NSObject+SASwizzler.h */,
 				9D241710258F0E330064A9E2 /* NSObject+SASwizzler.m */,
+				1C9641AA25768DE300C9A35D /* SensorsAnalyticsSDK.h */,
+				1C9641AB25768DE300C9A35D /* SensorsAnalyticsSDK.m */,
 				9D241717258F11130064A9E2 /* UIViewController+SensorsData.h */,
 				9D241718258F11130064A9E2 /* UIViewController+SensorsData.m */,
+				1C40D2E32596125400B3A3C7 /* UIApplication+SensorsData.h */,
+				1C40D2E42596125400B3A3C7 /* UIApplication+SensorsData.m */,
+				1C40D2E92596212700B3A3C7 /* UIView+SensorsData.h */,
+				1C40D2EA2596212700B3A3C7 /* UIView+SensorsData.m */,
+				9DEEE2C725987778001A8C20 /* UIControl+SensorsData.h */,
+				9DEEE2C825987778001A8C20 /* UIControl+SensorsData.m */,
+				1C96414C25768D4A00C9A35D /* Info.plist */,
 				9D241721258F21FB0064A9E2 /* sensorsdata_black_list.plist */,
 			);
 			path = SensorsSDK;
@@ -117,7 +135,10 @@
 				9D241711258F0E330064A9E2 /* NSObject+SASwizzler.h in Headers */,
 				1C9641AC25768DE300C9A35D /* SensorsAnalyticsSDK.h in Headers */,
 				1C96415925768D4A00C9A35D /* SensorsSDK.h in Headers */,
+				1C40D2EB2596212700B3A3C7 /* UIView+SensorsData.h in Headers */,
+				1C40D2E52596125400B3A3C7 /* UIApplication+SensorsData.h in Headers */,
 				9D241719258F11130064A9E2 /* UIViewController+SensorsData.h in Headers */,
+				9DEEE2C925987778001A8C20 /* UIControl+SensorsData.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +241,10 @@
 			files = (
 				9D24171A258F11130064A9E2 /* UIViewController+SensorsData.m in Sources */,
 				1C9641AD25768DE300C9A35D /* SensorsAnalyticsSDK.m in Sources */,
+				1C40D2E62596125400B3A3C7 /* UIApplication+SensorsData.m in Sources */,
 				9D241712258F0E330064A9E2 /* NSObject+SASwizzler.m in Sources */,
+				1C40D2EC2596212700B3A3C7 /* UIView+SensorsData.m in Sources */,
+				9DEEE2CA25987778001A8C20 /* UIControl+SensorsData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

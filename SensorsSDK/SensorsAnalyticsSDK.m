@@ -6,6 +6,7 @@
 //
 
 #import "SensorsAnalyticsSDK.h"
+#import "UIView+SensorsData.h"
 #include <sys/sysctl.h>
 
 static NSString *const SensorsAnalyticsVersion = @"1.0.0";
@@ -163,6 +164,22 @@ static NSString *const SensorsAnalyticsVersion = @"1.0.0";
     
     //在Xcode控制台中打印事件日志
     [self printEvent:event];
+}
+
+
+-(void)trackAppClickWithView:(UIView *)view properties:(NSDictionary<NSString *,id> *)properties
+{
+    NSMutableDictionary *eventProperties = [NSMutableDictionary dictionary];
+    //获取控件类型
+    eventProperties[@"$element_type"] = view.sensorsdata_elementType;
+    //获取控件显示文本
+    eventProperties[@"$element_content"] = view.sensorsdata_elementContent;
+    //获取控件所在视图控制器
+    eventProperties[@"$screen_name"] = NSStringFromClass([view.sensorsdata_viewController class]);
+    //添加自定义属性
+    [eventProperties addEntriesFromDictionary:properties];
+    //触发$AppClick事件
+    [[SensorsAnalyticsSDK sharedInstance] track:@"$AppClick" properties:eventProperties];
 }
 
 @end

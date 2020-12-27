@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param originalSEL 原始方法
  @param alternateSEL 要交换的方法
  */
-+ (BOOL)sensorsdata_swizzleMethod:(SEL)originalSEL withMethod:(SEL)alternateSEL;
++(BOOL)sensorsdata_swizzleMethod:(SEL)originalSEL withMethod:(SEL)alternateSEL;
 
 @end
 
